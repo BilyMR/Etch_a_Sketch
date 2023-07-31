@@ -1,0 +1,76 @@
+body {
+  font-family: 'Roboto Slab', serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#controles {
+  padding: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#input {
+  width: 150px;
+}
+
+button {
+  padding: 0.6rem 0.7rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  margin: 0.5rem;
+  border: 0.5px solid;
+  background-color: #f2934c;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+button:active {
+  opacity: 0.2;
+}
+
+#grid {
+  border: 0.06rem solid;
+  height: 80rem;
+  width: 80rem;
+  border-radius: 0.5rem;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.square {
+  background-color: #889b70;
+  border-radius: 0.1rem;
+  border: 0.5px solid;
+}
+
+.square.active {
+  background-color: #191d15;
+}
